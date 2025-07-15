@@ -31,6 +31,9 @@
     updatedAt: { type: Date, default: Date.now },
   });
 
+  UserSchema.index({ email: 1 });
+  UserSchema.index({ phone: 1 });
+
   UserSchema.pre('save', async function (next) {
     if (this.isModified('password')) {
       this.password = await bcrypt.hash(this.password, 10);

@@ -32,8 +32,8 @@
         </style>
       </head>
       <body>
-        <h1>Welcome to the famr web app project backend</h1>
-        <p>Add your contribution via <a href="https://github.com/tomolaoke/famr-backend">GitHub</a></p>
+        <h1>Welcome to the famr webapp project backend</h1>
+        <p>Add your contribution via <a href="https://github.com">GitHub</a></p>
       </body>
       </html>
     `);
