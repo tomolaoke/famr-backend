@@ -77,7 +77,7 @@ exports.signup = [
       const payload = { user: { id: user.id, role: user.role } };
       const token = jwt.sign(payload, process.env.JWT_SECRET, { expiresIn: '1h' });
 
-      res.status(200).json({ userId: user.id, token, message: 'You have been Signed up to famr!' });
+      res.status(200).json({ userId: user.id, token, message: 'YouSigned up!' });
     } catch (err) {
       console.error(err.message);
       res.status(500).json({ message: 'Server error' });

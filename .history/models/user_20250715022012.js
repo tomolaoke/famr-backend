@@ -50,4 +50,6 @@
   };
 
   module.exports = mongoose.model('User', UserSchema);
-  
+
+  const { countries } = require('countries-list');
+console.log(countries['NG'].currency); // Should print: 'NGN'
